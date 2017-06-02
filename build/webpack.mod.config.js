@@ -1,3 +1,8 @@
+
+/**
+ * ******！！废弃！！******
+ * @type {[type]}
+ */
 const path = require('path');
 const pak = require('../package.json');
 const webpack = require('webpack');
