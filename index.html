@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>导航页</title>
+    <style>
+        button {
+            display: block;
+            width: 80%;
+            height: 40px;
+            margin: 20px auto;
+            font-size: 18px
+        }
+    </style>
+</head>
+<body>
+    <button>addPatterns</button>
+    <button>hotPatterns</button>
+    <button>lookingFor</button>
+    <button>newPatterns</button>
+    <button>picSearch</button>
+    <button>releaseSupply</button>
+    <button>releaseWanted</button>
+    <button>shopWanted</button>
+    <script>
+        Array.from(document.querySelectorAll('button')).forEach(function(item) {
+            item.onclick = function() {
+                location.href = './' + this.innerText + '.html';
+            };
+        });
+    </script>
+</body>
+</html>
